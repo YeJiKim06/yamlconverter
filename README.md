@@ -1,1 +1,9 @@
-# yamlconverter
+🛡️ JSON ⇄ YAML 스마트 변환기 (Smart Converter)안전하고 편리하게 데이터를 변환하고, 눈에 보이지 않는 제어 문자 및 워터마크까지 실시간으로 탐지하는 브라우저 기반 양방향 변환기입니다.이 도구는 일반적인 포맷 변환기 기능뿐만 아니라, 텍스트 내부에 무단으로 삽입될 수 있는 제로 너비 공백(ZWSP), 탭(Tab), 널(Null) 문자 등 눈에 보이지 않는 특수 유니코드 문자(워터마크 캐릭터)를 실시간으로 스캔하고 시각화해 주는 스마트 변환 도구입니다.✨ 주요 특징 (Key Features)🔄 완벽한 양방향 변환 (Bi-directional Conversion)JSON ➔ YAML 및 YAML ➔ JSON으로의 상호 변환을 완벽히 지원합니다.정밀한 들여쓰기 룰(4 Spaces Indentation)을 기본 탑재하여 변환 시 코드의 정렬 구조가 흐트러지지 않습니다.🔍 실시간 제어 문자 & 워터마크 탐지 (Invisible Character Scanner)최근 AI 출력물이나 보안 문서 등에 자주 쓰이는 비가시 워터마크 문자를 실시간으로 감지합니다.감지 대상:탭 문자 (Tab Characters - U+0009)널 문자 (Null Characters - U+0000)제로 너비 공백 (ZWSP - U+200B ~ U+200D, U+FEFF)기타 비가시 제어 문자 (Other Non-Printing Characters - 아스키 제어 문자 영역)🎨 인체공학적 이중 에디터 디자인 (Dual-Theme Editor UI)JSON INPUT (좌측): 익숙한 데이터 편집 환경을 제공하는 깔끔한 라이트 테마 에디터.YAML OUTPUT (우측): 코드의 가독성을 극대화하여 문법 가독성을 돕는 다크 테마 에디터.모바일 환경에서도 유연하게 가로 일렬에서 세로 레이아웃으로 자동 전환되는 반응형 그리드를 채택했습니다.📋 강력한 클립보드 복사 기능 (Robust Clipboard Copy)일반적인 브라우저 보안 제약이나 Iframe 내부 실행 조건에서도 원활히 동작할 수 있도록 폴백 메커니즘을 내장한 안전한 복사 로직을 지원합니다.⚡ 무설치 단일 파일 실행 (Standalone/Zero-Dependency)별도의 백엔드 서버나 복잡한 빌드 과정 없이 index.html 파일 하나만 브라우저로 실행해도 즉각 구동됩니다.🛠️ 기술 스택 (Tech Stack)Language: HTML5, CSS3 (No framework / Pure Custom CSS), JavaScript (ES6+)Library: js-yaml (v4.1.0 via CDN)🚀 사용 방법 (How to Use)JSON ➔ YAML 변환:좌측 라이트 에디터에 JSON 데이터를 입력하거나 붙여넣습니다.YAML로 변환 ➔ 빨간색 버튼을 클릭합니다.우측 다크 에디터에 정렬된 YAML 결과가 출력됩니다.YAML ➔ JSON 변환:우측 다크 에디터에 YAML 데이터를 입력하거나 붙여넣습니다.⇠ JSON으로 변환 초록색 버튼을 클릭합니다.좌측 라이트 에디터에 가독성 높게 정렬된 JSON 결과가 출력됩니다.워터마크 문자 감지:텍스트를 붙여넣거나 직접 작성하면 상단의 "검출된 제어 문자 및 제로 너비 문자" 패널의 카운터 수치가 실시간으로 갱신됩니다.이를 통해 시스템 오작동이나 파싱 에러를 유발하는 잘못된 숨은 제어 문자를 사전에 예방할 수 있습니다.결과물 공유:YAML 결과 복사 파란색 버튼을 누르면 단 한 번의 클릭으로 클립보드에 결과가 저장됩니다.⚙️ 개발사양 및 코드 규칙본 변환기의 모든 포맷팅 및 소스 코드는 일관성 확보를 위해 4 Spaces(공백 4칸) 들여쓰기 룰을 일관되게 고수하여 작성되었습니다.예시 (JSON 4칸 정렬 기준):{
+    "service": "converter",
+    "features": [
+        "json-to-yaml",
+        "yaml-to-json"
+    ],
+    "spaces": 4
+}
+📄 라이선스 (License)본 프로젝트는 자유롭게 복사, 수정, 배포 및 상업적 이용이 가능한 오픈소스 소프트웨어입니다.
